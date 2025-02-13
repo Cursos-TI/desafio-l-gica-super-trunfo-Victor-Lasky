@@ -5,9 +5,14 @@ int main() {
 //variáveis
     char estado1[20], estado2[20], cidade1[20], resultado[20], cidade2[20];
     int codigo1, codigo2, populacao1, populacao2, turisticos1, turisticos2, atributo1, atributo2,modo,comparacao;
-    float area1, area2, pib1, pib2,densidade1,densidade2;
+    float area1, area2, pib1, pib2;
 
 //Código para inserir manualmente os dados das cartas.
+   printf("Bem vindo ao Super Trunfo Cidades.");
+   printf("____Menu Inicial___");
+   printf("1- Jogar\n2- Regras\n3- Sair\n");
+   
+   
     printf("Carregando...\n\nJogador 1:\n\n");
     printf("Digite o código da carta:\n");
     scanf("%d", &codigo1);
@@ -190,7 +195,7 @@ switch (atributo2){
             printf("Escolha dois atributos para serem comparados em:\n");
             printf("obs: Vencerá a carta que tiver exito nos dois atributos.");
             printf("1- Comparar a Área e Populacão.\n");
-            prinft("2- Comparar o PIB e Densidade Populacional\n");
+            printf("2- Comparar o PIB e Densidade Populacional\n");
             printf("3- Comparar os Pontos Turísticos e Área.\n");
             scanf("%d",comparacao);
 
@@ -234,4 +239,5 @@ switch(comparacao){
 
         }
     return 0;
+}
 }
