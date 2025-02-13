@@ -197,51 +197,41 @@ switch (atributo2){
 
 switch(comparacao){
     case 1:
-    if(area1>area2)
+    if(area1>area2){
         if(populacao1>populacao2){
             printf("Comparando os atributos de Área e Populacão, a cidade ganhadora é:%s\n",cidade1);
             }else{
                 printf("Comparando os atributos de Área e Populacão, a cidade ganhadora é:%s\n",cidade2);
             }
-    
-    case 2:
-    if(pib1>pib2)
+        }
+        break;
+    case 2:{
+    if(pib1>pib2){
         if(densidade1<densidade2){
             printf("Comparando os atributos de PIB e Densidade Populacional, a cidade ganhadora é:%s\n",cidade1);
             }else{
                 printf("Comparando os atributos de PIB e Densidade Populacional, a cidade ganhadora é:%s\n",cidade2);
             }
+        }
+        break;
     case 3:
-      (turisticos1>turisticos2&&area1>area2){
+      if(turisticos1>turisticos2&&area1>area2){
         printf("Comparando os atributos de Pontos Turísticos e Área, a cidade ganhadora é:%s\n",cidade1);
       }else{
         printf("Comparando os atributos de Pontos Turísticos e Área, a cidade ganhadora é:%s\n",cidade2);
       }
            
            
-            }
+            
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-                
-                break;
-        default:
-        printf("Opcão inválida. Tente Novamente.\n");
+   break;
+   default:
+   printf("Opcão inválida. Tente Novamente.\n");
  
             }
      
 
-
+        }
     return 0;
 }
