@@ -95,9 +95,13 @@ switch(modo){
 
         if (populacao1>populacao2){
               printf("A carta contendo a cidade com maior populacão é %s:\n",cidade1);
-        }else{
+        }else if(populacao1==populacao2){
 
-        printf("A carta contendo a cidade com maior populacão é %s:\n",cidade2);
+        prinft("Empate!! As duas cartas contém os mesmos atributos.");
+          
+           }else{
+
+          printf("A carta contendo a cidade com maior populacão é %s:\n",cidade2);
     }
  
        break;
@@ -105,7 +109,11 @@ switch(modo){
 
         if (area1>area2){
              printf("A carta contendo a cidade com maior área é %s:\n",cidade1);
-        }else{
+            }else if(area1==area2){
+
+                prinft("Empate!! As duas cartas contém os mesmos atributos.");
+        
+            }else{
             printf("A carta contendo a cidade com maior área é %s\n",cidade2);
         }
      
@@ -113,6 +121,10 @@ switch(modo){
      case 3:
         if (pib1<pib2){
             printf("A carta contendo a cidade com maior o maior PIB é %s\n",cidade2);
+        }else if(pib1==pib2){
+
+            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+       
         }else{
             printf("A carta contendo a cidade com maior o maior PIB é %s\n",cidade1);
         }
@@ -122,6 +134,10 @@ switch(modo){
      case 4:
         if (turisticos1>turisticos2){
             printf("A carta contendo a cidade com maior número de Pontos turisticos é %s\n",cidade1);
+        }else if(turisticos1==turisticos2){
+
+            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+       
         }else{
             printf("A carta contendo a cidade com maior número de Pontos turisticos é %s\n",cidade2);
         }
@@ -130,7 +146,11 @@ switch(modo){
      case 5:
          if(densidade1<densidade2){
             printf("A carta contendo a cidade com menor densidade populacional é:%s\n",cidade1);
-         }else{
+        }else if(densidade1==densidade2){
+
+            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+        
+        }else{
             printf("A carta contendo a cidade com menor densidade populacional é:%s\n",cidade2);
          }
          break;
@@ -157,7 +177,11 @@ switch(comparacao){
     if(area1>area2){
         if(populacao1>populacao2){
             printf("Comparando os atributos de Área e Populacão, a cidade ganhadora é:%s\n",cidade1);
-            }else{
+           
+        }else if(populacao1==populacao2&&area1==area2){
+
+            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+        }else{
                 printf("Comparando os atributos de Área e Populacão, a cidade ganhadora é:%s\n",cidade2);
             }
         }
@@ -166,7 +190,13 @@ switch(comparacao){
     if(pib1>pib2){
         if(densidade1<densidade2){
             printf("Comparando os atributos de PIB e Densidade Populacional, a cidade ganhadora é:%s\n",cidade1);
-            }else{
+        
+        }else if(pib1==pib2&&densidade1==densidade2){
+
+            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+        
+        
+        }else{
                 printf("Comparando os atributos de PIB e Densidade Populacional, a cidade ganhadora é:%s\n",cidade2);
             }
         }
@@ -174,7 +204,13 @@ switch(comparacao){
     case 3:
       if(turisticos1>turisticos2&&area1>area2){
         printf("Comparando os atributos de Pontos Turísticos e Área, a cidade ganhadora é:%s\n",cidade1);
-      }else{
+   
+    }else if(turisticos1==turisticos2&&area1==area2){
+
+        prinft("Empate!! As duas cartas contém os mesmos atributos.");
+    
+    
+    }else{
         printf("Comparando os atributos de Pontos Turísticos e Área, a cidade ganhadora é:%s\n",cidade2);
       }
            
