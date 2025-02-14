@@ -199,7 +199,7 @@ switch(comparacao){
         }else{
                 printf("Comparando os atributos de PIB e Densidade Populacional, a cidade ganhadora é:%s\n",cidade2);
             }
-        }
+                 }
         break;
     case 3:
       if(turisticos1>turisticos2&&area1>area2){
