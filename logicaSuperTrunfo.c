@@ -97,7 +97,7 @@ switch(modo){
               printf("A carta contendo a cidade com maior populacão é %s:\n",cidade1);
         }else if(populacao1==populacao2){
 
-        prinft("Empate!! As duas cartas contém os mesmos atributos.");
+        printf("Empate!! As duas cartas contém os mesmos atributos.");
           
            }else{
 
@@ -111,7 +111,7 @@ switch(modo){
              printf("A carta contendo a cidade com maior área é %s:\n",cidade1);
             }else if(area1==area2){
 
-                prinft("Empate!! As duas cartas contém os mesmos atributos.");
+                printf("Empate!! As duas cartas contém os mesmos atributos.");
         
             }else{
             printf("A carta contendo a cidade com maior área é %s\n",cidade2);
@@ -123,7 +123,7 @@ switch(modo){
             printf("A carta contendo a cidade com maior o maior PIB é %s\n",cidade2);
         }else if(pib1==pib2){
 
-            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+            printf("Empate!! As duas cartas contém os mesmos atributos.");
        
         }else{
             printf("A carta contendo a cidade com maior o maior PIB é %s\n",cidade1);
@@ -136,7 +136,7 @@ switch(modo){
             printf("A carta contendo a cidade com maior número de Pontos turisticos é %s\n",cidade1);
         }else if(turisticos1==turisticos2){
 
-            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+            printf("Empate!! As duas cartas contém os mesmos atributos.");
        
         }else{
             printf("A carta contendo a cidade com maior número de Pontos turisticos é %s\n",cidade2);
@@ -148,7 +148,7 @@ switch(modo){
             printf("A carta contendo a cidade com menor densidade populacional é:%s\n",cidade1);
         }else if(densidade1==densidade2){
 
-            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+            printf("Empate!! As duas cartas contém os mesmos atributos.");
         
         }else{
             printf("A carta contendo a cidade com menor densidade populacional é:%s\n",cidade2);
@@ -180,7 +180,7 @@ switch(comparacao){
            
         }else if(populacao1==populacao2&&area1==area2){
 
-            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+            printf("Empate!! As duas cartas contém os mesmos atributos.");
         }else{
                 printf("Comparando os atributos de Área e Populacão, a cidade ganhadora é:%s\n",cidade2);
             }
@@ -193,7 +193,7 @@ switch(comparacao){
         
         }else if(pib1==pib2&&densidade1==densidade2){
 
-            prinft("Empate!! As duas cartas contém os mesmos atributos.");
+            printf("Empate!! As duas cartas contém os mesmos atributos.");
         
         
         }else{
@@ -207,7 +207,7 @@ switch(comparacao){
    
     }else if(turisticos1==turisticos2&&area1==area2){
 
-        prinft("Empate!! As duas cartas contém os mesmos atributos.");
+        printf("Empate!! As duas cartas contém os mesmos atributos.");
     
     
     }else{
@@ -227,15 +227,20 @@ switch(comparacao){
 
          }
     
-    break;
+        }
+   
+         break;
    
 
-        } 
+        
     case 2:
 
     printf("Funcionamento do Super Trunfo Cartas...\nPasso 1 - Cadastre suas cartas interativamente, colocando informacões como:\nCódigo da Carta, Estado, Cidade, Populacão, Área, PIB, Pontos Turísticos.\n");
     printf("Passo 2 - Escolha o modo de jogo, comparando um atributo entre as cartas ou dois atributos.");
-
+     
+    default:
+   printf("Opcão inválida. Tente Novamente.\n");
+   break;
 
     } 
 
