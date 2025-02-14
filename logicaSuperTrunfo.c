@@ -197,7 +197,8 @@ switch(comparacao){
         } 
     case 2:
 
-    printf("toledo");
+    printf("Funcionamento do Super Trunfo Cartas...\nPasso 1 - Cadastre suas cartas interativamente, colocando informacões como:\nCódigo da Carta, Estado, Cidade, Populacão, Área, PIB, Pontos Turísticos.\n");
+    printf("Passo 2 - Escolha o modo de jogo, comparando um atributo entre as cartas ou dois atributos.");
 
 
     } 
