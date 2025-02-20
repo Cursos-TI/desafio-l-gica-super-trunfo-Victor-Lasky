@@ -2,19 +2,19 @@
 
 int main() {
 
-//variáveis
+//Declaração de Variáveis.
     char estado1[20], estado2[20], cidade1[20], resultado[20], cidade2[20];
     int codigo1, codigo2, populacao1, populacao2, turisticos1, turisticos2, atributo,modo,comparacao,menu;
     float area1, area2, pib1, pib2;
 
-//Código para inserir manualmente os dados das cartas.
+//Implementação do menu inicial.
    printf("Bem vindo ao Super Trunfo Cidades.\n");
    printf("____Menu Inicial___\n");
    printf("1- Jogar\n2- Regras\n3- Sair\n");
    scanf("%d",&menu);
    switch(menu){
        case 1:
-   
+//Implementação do código para o cadastro manual das cartas.
     printf("Carregando...\n\nJogador 1:\n\n");
     printf("Digite o código da carta:\n");
     scanf("%d", &codigo1);
@@ -64,22 +64,22 @@ int main() {
     float densidade1 = (float) populacao1/area1;
     float densidade2 = (float) populacao2/area2;
 
-//código para mostrar as propriedades de cada carta.
+//Imprime as propriedades de cada carta.
    
     printf("Propriedades da carta, jogador 1\n");
     printf("Código:%.2d\nEstado:%.2s\nCidade:%.2s\nPopulacão:%.2d\nÁrea:%.2f\nPIB:%.2f\nPontos Turísticos:%.2d\nDensidade Populacional%.2f\n",codigo1,estado1,cidade1,populacao1,area1,pib1,turisticos1,densidade1);
     printf("Propriedades da carta, jogador 2\n");
     printf("Código:%.2d\nEstado:%.2s\nCidade:%.2s\nPopulacão:%.2d\nÁrea:%.2f\nPIB:%.2f\nPontos Turísticos:%.2d\nDensidade Populacional%.2f\n",codigo2,estado2,cidade2,populacao2,area2,pib2,turisticos2,densidade2);
 
-//menu para escolha do modo de jogo
+//Implementação de menu para escolha do modo de jogo.
     printf("Modo de Jogo:\n");
     printf("1 - Comparar um atributo de cada carta.\n");
     printf("2 - Comparar dois atributos de cada carta.\n");
     scanf("%d",&modo);
 switch(modo){
-       
+       //Modo de jogo 1.
        case 1:
-    //código para comparacao de atributos separadamente        
+    //Implementação para a comparação de atributos separadamente .      
     printf("Escolha 1 atributo para ser comparado entre as cartas:\n");
     printf("1- Comparar qual carta tem a maior População\n");
     printf("2- Comparar qual carta tem a maior Área\n");
@@ -89,7 +89,7 @@ switch(modo){
     
     printf("Escolha o atributo a ser comparado:\n");
     scanf("%d", &atributo);
-
+//Condições para impressão na tela.
  switch (atributo){
     case 1:
 
@@ -161,9 +161,9 @@ switch(modo){
         default:
         printf("Opcão inválida. Tente Novamente.\n");
  
-
+//Modo de jogo 2.
              case 2:{
-            
+            //Menu para escolha do atributos a serem comparados.
             printf("Escolha dois atributos para serem comparados:\n");
             printf("obs: Vencerá a carta que tiver exito nos dois atributos.\n");
             printf("1- Comparar a Área e Populacão.\n");
@@ -171,7 +171,7 @@ switch(modo){
             printf("3- Comparar os Pontos Turísticos e Área.\n");
             scanf("%d",&comparacao);
 
-
+//Condições para impressão na tela.
 switch(comparacao){
     case 1:
     if(area1>area2){
